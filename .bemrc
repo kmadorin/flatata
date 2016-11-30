@@ -13,7 +13,7 @@ module.exports = {
         'bem-tools': {
             plugins: {
                 create: {
-                    techs: ['css', 'js'],
+                    techs: ['styl', 'bemhtml.js'],
                     levels: {
                         'common.blocks': {
                             default: true

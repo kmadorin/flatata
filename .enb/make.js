@@ -28,13 +28,13 @@ var techs = {
         { path: 'libs/bem-components/design/common.blocks', check: false },
         { path: 'libs/bem-components/design/desktop.blocks', check: false },
         'common.blocks',
-        'desktop.blocks'
+        'design'
     ];
 
 module.exports = function(config) {
     var isProd = process.env.YENV === 'production';
 
-    config.nodes('*.bundles/*', function(nodeConfig) {
+    config.nodes('pages/*', function(nodeConfig) {
         nodeConfig.addTechs([
             // essential
             [enbBemTechs.levels, { levels: levels }],
@@ -47,6 +47,7 @@ module.exports = function(config) {
             [techs.stylus, {
                 target: '?.css',
                 sourcemap: false,
+                url: 'inline',
                 autoprefixer: {
                     browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
                 }

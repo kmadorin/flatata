@@ -1,0 +1,1 @@
+block('hero').tag()('section');

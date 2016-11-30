@@ -1,0 +1,31 @@
+.button {
+  display inline-block;
+  box-sizing: border-box;
+  border: 1px solid #d7e7ec;
+  border-radius: 40px;
+  font-size: 12px;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  color: #299bc4;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s ease;
+  &:hover {
+    background #299CC4;
+    border-color: #299cc4;
+    color: #fefefe;
+  }
+  &_grey {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-color: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: transparent;
+    }
+  }
+}

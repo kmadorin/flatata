@@ -1,0 +1,39 @@
+.hero {
+  padding-top: 50px;
+  &__content {
+    max-width: 1124px;
+    margin: 0 auto;
+    padding-top: 136px;
+    padding-bottom 87px;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+  }
+  &__col {
+    &_left {
+      width: 475px;
+      float: left;
+    }
+    &_right {
+      float: right;
+      width: 545px;
+      padding-top 9px;
+    }
+  }
+  &__heading {
+    margin: 0;
+  }
+  &__text {
+    margin: 0;;
+  }
+}
